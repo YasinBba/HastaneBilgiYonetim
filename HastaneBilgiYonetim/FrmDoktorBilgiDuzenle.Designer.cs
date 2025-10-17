@@ -1,6 +1,6 @@
 ﻿namespace HastaneBilgiYonetim
 {
-    partial class FrmBilgiDüzenle
+    partial class FrmDoktorBilgiDuzenle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,174 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.CmbBoxCinsiyet = new System.Windows.Forms.ComboBox();
+            this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtTelefon = new System.Windows.Forms.MaskedTextBox();
             this.TxtAd = new System.Windows.Forms.MaskedTextBox();
             this.TxtSoyad = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnKayıtOl = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
             this.TxtTcKimlik = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(114, 227);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 23);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Cinsiyet:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(122, 148);
+            this.label5.Location = new System.Drawing.Point(70, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 23);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Telefon:";
+            this.label5.Size = new System.Drawing.Size(59, 23);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Branş:";
             // 
-            // CmbBoxCinsiyet
+            // CmbBrans
             // 
-            this.CmbBoxCinsiyet.FormattingEnabled = true;
-            this.CmbBoxCinsiyet.Items.AddRange(new object[] {
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Items.AddRange(new object[] {
             "Kadın",
             "Erkek"});
-            this.CmbBoxCinsiyet.Location = new System.Drawing.Point(206, 219);
-            this.CmbBoxCinsiyet.Name = "CmbBoxCinsiyet";
-            this.CmbBoxCinsiyet.Size = new System.Drawing.Size(137, 31);
-            this.CmbBoxCinsiyet.TabIndex = 29;
+            this.CmbBrans.Location = new System.Drawing.Point(140, 149);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(137, 31);
+            this.CmbBrans.TabIndex = 42;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 69);
+            this.label4.Location = new System.Drawing.Point(67, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 23);
-            this.label4.TabIndex = 28;
+            this.label4.TabIndex = 41;
             this.label4.Text = "Soyad:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(158, 30);
+            this.label3.Location = new System.Drawing.Point(92, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 23);
-            this.label3.TabIndex = 27;
+            this.label3.TabIndex = 40;
             this.label3.Text = "Ad:";
-            // 
-            // TxtTelefon
-            // 
-            this.TxtTelefon.Location = new System.Drawing.Point(206, 141);
-            this.TxtTelefon.Mask = "(999) 000-0000";
-            this.TxtTelefon.Name = "TxtTelefon";
-            this.TxtTelefon.Size = new System.Drawing.Size(137, 31);
-            this.TxtTelefon.TabIndex = 26;
             // 
             // TxtAd
             // 
-            this.TxtAd.Location = new System.Drawing.Point(206, 23);
+            this.TxtAd.Location = new System.Drawing.Point(140, 32);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(137, 31);
-            this.TxtAd.TabIndex = 25;
+            this.TxtAd.TabIndex = 38;
             // 
             // TxtSoyad
             // 
-            this.TxtSoyad.Location = new System.Drawing.Point(206, 62);
+            this.TxtSoyad.Location = new System.Drawing.Point(140, 71);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(137, 31);
-            this.TxtSoyad.TabIndex = 24;
+            this.TxtSoyad.TabIndex = 37;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 187);
+            this.label2.Location = new System.Drawing.Point(75, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 23);
-            this.label2.TabIndex = 23;
+            this.label2.TabIndex = 36;
             this.label2.Text = "Şifre:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 110);
+            this.label1.Location = new System.Drawing.Point(12, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 23);
-            this.label1.TabIndex = 22;
+            this.label1.TabIndex = 35;
             this.label1.Text = "TC Kimlik No:";
             // 
-            // BtnKayıtOl
+            // BtnGuncelle
             // 
-            this.BtnKayıtOl.Location = new System.Drawing.Point(206, 269);
-            this.BtnKayıtOl.Name = "BtnKayıtOl";
-            this.BtnKayıtOl.Size = new System.Drawing.Size(137, 38);
-            this.BtnKayıtOl.TabIndex = 21;
-            this.BtnKayıtOl.Text = "Güncelle";
-            this.BtnKayıtOl.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Location = new System.Drawing.Point(140, 235);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(137, 38);
+            this.BtnGuncelle.TabIndex = 34;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
             // TxtSifre
             // 
-            this.TxtSifre.Location = new System.Drawing.Point(206, 180);
+            this.TxtSifre.Location = new System.Drawing.Point(140, 189);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(137, 31);
-            this.TxtSifre.TabIndex = 20;
+            this.TxtSifre.TabIndex = 33;
             // 
             // TxtTcKimlik
             // 
-            this.TxtTcKimlik.Location = new System.Drawing.Point(206, 102);
+            this.TxtTcKimlik.Location = new System.Drawing.Point(140, 111);
             this.TxtTcKimlik.Mask = "00000000000";
             this.TxtTcKimlik.Name = "TxtTcKimlik";
             this.TxtTcKimlik.Size = new System.Drawing.Size(137, 31);
-            this.TxtTcKimlik.TabIndex = 19;
+            this.TxtTcKimlik.TabIndex = 32;
             this.TxtTcKimlik.ValidatingType = typeof(int);
             // 
-            // FrmBilgiDüzenle
+            // FrmDoktorBilgiDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(384, 342);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(365, 300);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.CmbBoxCinsiyet);
+            this.Controls.Add(this.CmbBrans);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TxtTelefon);
             this.Controls.Add(this.TxtAd);
             this.Controls.Add(this.TxtSoyad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnKayıtOl);
+            this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.TxtTcKimlik);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "FrmBilgiDüzenle";
-            this.Text = "FrmBilgiDüzenle";
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "FrmDoktorBilgiDuzenle";
+            this.Text = "FrmDoktorBilgiDuzenle";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CmbBoxCinsiyet;
+        private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox TxtTelefon;
         private System.Windows.Forms.MaskedTextBox TxtAd;
         private System.Windows.Forms.MaskedTextBox TxtSoyad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BtnKayıtOl;
+        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.MaskedTextBox TxtSifre;
         private System.Windows.Forms.MaskedTextBox TxtTcKimlik;
     }
