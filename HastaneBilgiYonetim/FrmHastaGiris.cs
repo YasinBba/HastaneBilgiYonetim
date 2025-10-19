@@ -16,5 +16,11 @@ namespace HastaneBilgiYonetim
         {
             InitializeComponent();
         }
+
+        private void LinkLblUyeOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmHastaKayit fr = new FrmHastaKayit();
+            fr.Show();
+        }
     }
 }

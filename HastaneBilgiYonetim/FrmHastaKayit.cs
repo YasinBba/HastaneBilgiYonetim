@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace HastaneBilgiYonetim
 {
@@ -16,5 +17,13 @@ namespace HastaneBilgiYonetim
         {
             InitializeComponent();
         }
+
+        SqlBaglanti bgl = new SqlBaglanti();
+
+        private void BtnKayıtOl_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Hastalar (HastaAd,HastaSoyad,HastaTC,HastaTelefon,HastaSifre,HastaCinsiyet) values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
+        }
     }
+
 }

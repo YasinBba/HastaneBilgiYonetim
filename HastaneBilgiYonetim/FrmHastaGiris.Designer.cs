@@ -99,11 +99,14 @@
             this.LinkLblUyeOl.TabIndex = 6;
             this.LinkLblUyeOl.TabStop = true;
             this.LinkLblUyeOl.Text = "Üye Ol";
+            this.LinkLblUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLblUyeOl_LinkClicked);
             // 
             // FrmHastaGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(369, 383);
             this.Controls.Add(this.LinkLblUyeOl);
@@ -115,6 +118,7 @@
             this.Controls.Add(this.TxtTcKimlik);
             this.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "FrmHastaGiris";
             this.Text = "FrmHastaGiris";
             this.ResumeLayout(false);

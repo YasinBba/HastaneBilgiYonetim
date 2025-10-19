@@ -7,11 +7,11 @@ using System.Data.SqlClient;
 
 namespace HastaneBilgiYonetim
 {
-     class SqlBaglanti
+    public class SqlBaglanti
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection("");
+            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-29IUMJH\\MSSQL_SERVER;Initial Catalog=HastaneYonetimPaneliDB;Integrated Security=True");
             baglan.Open();
             return baglan;
         }

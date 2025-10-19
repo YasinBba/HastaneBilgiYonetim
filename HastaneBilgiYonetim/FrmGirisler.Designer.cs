@@ -46,6 +46,7 @@
             this.BtnHasta.TabIndex = 0;
             this.BtnHasta.Text = "Hasta";
             this.BtnHasta.UseVisualStyleBackColor = false;
+            this.BtnHasta.Click += new System.EventHandler(this.BtnHasta_Click);
             // 
             // button2
             // 
@@ -68,6 +69,7 @@
             this.BtnDoktor.TabIndex = 2;
             this.BtnDoktor.Text = "Doktor";
             this.BtnDoktor.UseVisualStyleBackColor = false;
+            this.BtnDoktor.Click += new System.EventHandler(this.BtnDoktor_Click);
             // 
             // BtnSekreter
             // 
@@ -80,6 +82,7 @@
             this.BtnSekreter.TabIndex = 3;
             this.BtnSekreter.Text = "Sekreter";
             this.BtnSekreter.UseVisualStyleBackColor = false;
+            this.BtnSekreter.Click += new System.EventHandler(this.BtnSekreter_Click);
             // 
             // label1
             // 
@@ -95,6 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(917, 436);
             this.Controls.Add(this.label1);
@@ -105,6 +109,7 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmGirisler";
             this.Text = "FrmGirisler";
             this.ResumeLayout(false);
