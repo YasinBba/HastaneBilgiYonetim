@@ -33,6 +33,7 @@ namespace HastaneBilgiYonetim
             if (dr.Read())
             {
                 FrmHastaDetay fr = new FrmHastaDetay();
+                fr.TC = TxtTcKimlik.Text;
                 fr.Show();
                 this.Hide();
 
