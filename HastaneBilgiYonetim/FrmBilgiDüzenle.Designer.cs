@@ -138,6 +138,7 @@
             this.BtnKayıtOl.TabIndex = 21;
             this.BtnKayıtOl.Text = "Güncelle";
             this.BtnKayıtOl.UseVisualStyleBackColor = true;
+            this.BtnKayıtOl.Click += new System.EventHandler(this.BtnKayıtOl_Click);
             // 
             // TxtSifre
             // 
@@ -159,6 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(384, 342);
             this.Controls.Add(this.label6);
@@ -178,6 +180,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmBilgiDüzenle";
             this.Text = "FrmBilgiDüzenle";
+            this.Load += new System.EventHandler(this.FrmBilgiDüzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
