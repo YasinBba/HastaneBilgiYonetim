@@ -41,9 +41,9 @@
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.TxtDoktor = new System.Windows.Forms.ComboBox();
+            this.CmbDoktor = new System.Windows.Forms.ComboBox();
             this.TxtTc = new System.Windows.Forms.MaskedTextBox();
-            this.TxtBrans = new System.Windows.Forms.ComboBox();
+            this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.TxtSaat = new System.Windows.Forms.MaskedTextBox();
             this.TxtTarih = new System.Windows.Forms.MaskedTextBox();
             this.TxtId = new System.Windows.Forms.TextBox();
@@ -58,9 +58,9 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.BtnDoktorPanel = new System.Windows.Forms.Button();
-            this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnRandevuListe = new System.Windows.Forms.Button();
+            this.BtnBransPanel = new System.Windows.Forms.Button();
+            this.BtnDoktorPanel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -73,6 +73,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.LblAdSoyad);
             this.groupBox1.Controls.Add(this.LblTC);
             this.groupBox1.Controls.Add(this.label2);
@@ -157,9 +158,9 @@
             this.groupBox3.Controls.Add(this.BtnGuncelle);
             this.groupBox3.Controls.Add(this.BtnKaydet);
             this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Controls.Add(this.TxtDoktor);
+            this.groupBox3.Controls.Add(this.CmbDoktor);
             this.groupBox3.Controls.Add(this.TxtTc);
-            this.groupBox3.Controls.Add(this.TxtBrans);
+            this.groupBox3.Controls.Add(this.CmbBrans);
             this.groupBox3.Controls.Add(this.TxtSaat);
             this.groupBox3.Controls.Add(this.TxtTarih);
             this.groupBox3.Controls.Add(this.TxtId);
@@ -193,6 +194,7 @@
             this.BtnKaydet.TabIndex = 15;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // checkBox1
             // 
@@ -204,13 +206,13 @@
             this.checkBox1.Text = "Durum";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // TxtDoktor
+            // CmbDoktor
             // 
-            this.TxtDoktor.FormattingEnabled = true;
-            this.TxtDoktor.Location = new System.Drawing.Point(95, 178);
-            this.TxtDoktor.Name = "TxtDoktor";
-            this.TxtDoktor.Size = new System.Drawing.Size(121, 31);
-            this.TxtDoktor.TabIndex = 13;
+            this.CmbDoktor.FormattingEnabled = true;
+            this.CmbDoktor.Location = new System.Drawing.Point(95, 178);
+            this.CmbDoktor.Name = "CmbDoktor";
+            this.CmbDoktor.Size = new System.Drawing.Size(121, 31);
+            this.CmbDoktor.TabIndex = 13;
             // 
             // TxtTc
             // 
@@ -221,13 +223,14 @@
             this.TxtTc.TabIndex = 12;
             this.TxtTc.ValidatingType = typeof(int);
             // 
-            // TxtBrans
+            // CmbBrans
             // 
-            this.TxtBrans.FormattingEnabled = true;
-            this.TxtBrans.Location = new System.Drawing.Point(95, 141);
-            this.TxtBrans.Name = "TxtBrans";
-            this.TxtBrans.Size = new System.Drawing.Size(121, 31);
-            this.TxtBrans.TabIndex = 11;
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Location = new System.Drawing.Point(95, 141);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(121, 31);
+            this.CmbBrans.TabIndex = 11;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
             // TxtSaat
             // 
@@ -326,6 +329,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 27);
@@ -364,14 +368,14 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
-            // BtnDoktorPanel
+            // BtnRandevuListe
             // 
-            this.BtnDoktorPanel.Location = new System.Drawing.Point(26, 39);
-            this.BtnDoktorPanel.Name = "BtnDoktorPanel";
-            this.BtnDoktorPanel.Size = new System.Drawing.Size(166, 43);
-            this.BtnDoktorPanel.TabIndex = 16;
-            this.BtnDoktorPanel.Text = "Doktor Paneli";
-            this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            this.BtnRandevuListe.Location = new System.Drawing.Point(390, 39);
+            this.BtnRandevuListe.Name = "BtnRandevuListe";
+            this.BtnRandevuListe.Size = new System.Drawing.Size(166, 43);
+            this.BtnRandevuListe.TabIndex = 18;
+            this.BtnRandevuListe.Text = "Randevu Liste";
+            this.BtnRandevuListe.UseVisualStyleBackColor = true;
             // 
             // BtnBransPanel
             // 
@@ -382,14 +386,14 @@
             this.BtnBransPanel.Text = "Branş Paneli";
             this.BtnBransPanel.UseVisualStyleBackColor = true;
             // 
-            // BtnRandevuListe
+            // BtnDoktorPanel
             // 
-            this.BtnRandevuListe.Location = new System.Drawing.Point(390, 39);
-            this.BtnRandevuListe.Name = "BtnRandevuListe";
-            this.BtnRandevuListe.Size = new System.Drawing.Size(166, 43);
-            this.BtnRandevuListe.TabIndex = 18;
-            this.BtnRandevuListe.Text = "Randevu Liste";
-            this.BtnRandevuListe.UseVisualStyleBackColor = true;
+            this.BtnDoktorPanel.Location = new System.Drawing.Point(26, 39);
+            this.BtnDoktorPanel.Name = "BtnDoktorPanel";
+            this.BtnDoktorPanel.Size = new System.Drawing.Size(166, 43);
+            this.BtnDoktorPanel.TabIndex = 16;
+            this.BtnDoktorPanel.Text = "Doktor Paneli";
+            this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             // 
             // FrmSekreterDetay
             // 
@@ -407,6 +411,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterDetay";
             this.Text = "FrmSekreterDetay";
+            this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -433,9 +438,9 @@
         private System.Windows.Forms.RichTextBox TxtDuyuru;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox TxtDoktor;
+        private System.Windows.Forms.ComboBox CmbDoktor;
         private System.Windows.Forms.MaskedTextBox TxtTc;
-        private System.Windows.Forms.ComboBox TxtBrans;
+        private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.MaskedTextBox TxtSaat;
         private System.Windows.Forms.MaskedTextBox TxtTarih;
         private System.Windows.Forms.TextBox TxtId;

@@ -46,7 +46,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(114, 227);
+            this.label6.Location = new System.Drawing.Point(51, 228);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 23);
             this.label6.TabIndex = 31;
@@ -55,7 +55,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(122, 148);
+            this.label5.Location = new System.Drawing.Point(59, 149);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 23);
             this.label5.TabIndex = 30;
@@ -67,7 +67,7 @@
             this.CmbBoxCinsiyet.Items.AddRange(new object[] {
             "Kadın",
             "Erkek"});
-            this.CmbBoxCinsiyet.Location = new System.Drawing.Point(206, 219);
+            this.CmbBoxCinsiyet.Location = new System.Drawing.Point(143, 220);
             this.CmbBoxCinsiyet.Name = "CmbBoxCinsiyet";
             this.CmbBoxCinsiyet.Size = new System.Drawing.Size(137, 31);
             this.CmbBoxCinsiyet.TabIndex = 29;
@@ -75,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 69);
+            this.label4.Location = new System.Drawing.Point(70, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 23);
             this.label4.TabIndex = 28;
@@ -84,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(158, 30);
+            this.label3.Location = new System.Drawing.Point(95, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 23);
             this.label3.TabIndex = 27;
@@ -92,7 +92,7 @@
             // 
             // TxtTelefon
             // 
-            this.TxtTelefon.Location = new System.Drawing.Point(206, 141);
+            this.TxtTelefon.Location = new System.Drawing.Point(143, 142);
             this.TxtTelefon.Mask = "(999) 000-0000";
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(137, 31);
@@ -100,14 +100,14 @@
             // 
             // TxtAd
             // 
-            this.TxtAd.Location = new System.Drawing.Point(206, 23);
+            this.TxtAd.Location = new System.Drawing.Point(143, 24);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(137, 31);
             this.TxtAd.TabIndex = 25;
             // 
             // TxtSoyad
             // 
-            this.TxtSoyad.Location = new System.Drawing.Point(206, 62);
+            this.TxtSoyad.Location = new System.Drawing.Point(143, 63);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(137, 31);
             this.TxtSoyad.TabIndex = 24;
@@ -115,7 +115,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 187);
+            this.label2.Location = new System.Drawing.Point(78, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 23);
             this.label2.TabIndex = 23;
@@ -124,7 +124,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 110);
+            this.label1.Location = new System.Drawing.Point(15, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 22;
@@ -132,7 +132,7 @@
             // 
             // BtnKayıtOl
             // 
-            this.BtnKayıtOl.Location = new System.Drawing.Point(206, 269);
+            this.BtnKayıtOl.Location = new System.Drawing.Point(143, 270);
             this.BtnKayıtOl.Name = "BtnKayıtOl";
             this.BtnKayıtOl.Size = new System.Drawing.Size(137, 38);
             this.BtnKayıtOl.TabIndex = 21;
@@ -142,14 +142,14 @@
             // 
             // TxtSifre
             // 
-            this.TxtSifre.Location = new System.Drawing.Point(206, 180);
+            this.TxtSifre.Location = new System.Drawing.Point(143, 181);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(137, 31);
             this.TxtSifre.TabIndex = 20;
             // 
             // TxtTcKimlik
             // 
-            this.TxtTcKimlik.Location = new System.Drawing.Point(206, 102);
+            this.TxtTcKimlik.Location = new System.Drawing.Point(143, 103);
             this.TxtTcKimlik.Mask = "00000000000";
             this.TxtTcKimlik.Name = "TxtTcKimlik";
             this.TxtTcKimlik.Size = new System.Drawing.Size(137, 31);
@@ -162,7 +162,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(384, 342);
+            this.ClientSize = new System.Drawing.Size(315, 337);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CmbBoxCinsiyet);
