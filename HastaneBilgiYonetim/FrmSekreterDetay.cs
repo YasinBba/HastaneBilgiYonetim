@@ -103,5 +103,24 @@ namespace HastaneBilgiYonetim
             FrmDoktorPaneli fr = new FrmDoktorPaneli();
             fr.Show();
         }
+
+        private void BtnBransPanel_Click(object sender, EventArgs e)
+        {
+            FrmBranş fr = new FrmBranş();
+            fr.Show();
+
+        }
+
+        private void BtnRandevuListe_Click(object sender, EventArgs e)
+        {
+            FrmRandevListesi fr = new FrmRandevListesi();
+            fr.Show();
+        }
+
+        private void BtnDuyuru_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr = new FrmDuyurular();
+            fr.Show();
+        }
     }
 }

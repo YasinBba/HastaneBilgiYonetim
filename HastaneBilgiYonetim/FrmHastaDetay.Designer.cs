@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.BtnRandevuAl = new System.Windows.Forms.Button();
             this.TxtSikayet = new System.Windows.Forms.RichTextBox();
@@ -47,8 +49,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -108,7 +108,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.TxtId);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.BtnRandevuAl);
@@ -124,6 +124,23 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
+            // 
+            // TxtId
+            // 
+            this.TxtId.Enabled = false;
+            this.TxtId.Location = new System.Drawing.Point(79, 42);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(143, 31);
+            this.TxtId.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 23);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Id:";
             // 
             // linkLabel1
             // 
@@ -144,6 +161,7 @@
             this.BtnRandevuAl.TabIndex = 7;
             this.BtnRandevuAl.Text = "Randevu Al";
             this.BtnRandevuAl.UseVisualStyleBackColor = true;
+            this.BtnRandevuAl.Click += new System.EventHandler(this.BtnRandevuAl_Click);
             // 
             // TxtSikayet
             // 
@@ -235,22 +253,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(545, 293);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 23);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Id:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(79, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 31);
-            this.textBox1.TabIndex = 10;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // FrmHastaDetay
             // 
@@ -300,7 +303,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label label3;
     }
 }

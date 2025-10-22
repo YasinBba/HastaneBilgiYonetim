@@ -38,7 +38,6 @@
             this.BtnOlustur = new System.Windows.Forms.Button();
             this.TxtDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
@@ -58,9 +57,10 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.BtnDuyuru = new System.Windows.Forms.Button();
             this.BtnRandevuListe = new System.Windows.Forms.Button();
-            this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.BtnBransPanel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,7 +156,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnGuncelle);
             this.groupBox3.Controls.Add(this.BtnKaydet);
             this.groupBox3.Controls.Add(this.checkBox1);
             this.groupBox3.Controls.Add(this.CmbDoktor);
@@ -177,15 +176,6 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
-            // 
-            // BtnGuncelle
-            // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(95, 336);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(121, 43);
-            this.BtnGuncelle.TabIndex = 16;
-            this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
             // BtnKaydet
             // 
@@ -350,6 +340,7 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 27);
@@ -359,9 +350,10 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.BtnDuyuru);
             this.groupBox6.Controls.Add(this.BtnRandevuListe);
-            this.groupBox6.Controls.Add(this.BtnBransPanel);
             this.groupBox6.Controls.Add(this.BtnDoktorPanel);
+            this.groupBox6.Controls.Add(this.BtnBransPanel);
             this.groupBox6.Location = new System.Drawing.Point(12, 414);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(581, 104);
@@ -369,33 +361,45 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
+            // BtnDuyuru
+            // 
+            this.BtnDuyuru.Location = new System.Drawing.Point(440, 39);
+            this.BtnDuyuru.Name = "BtnDuyuru";
+            this.BtnDuyuru.Size = new System.Drawing.Size(135, 43);
+            this.BtnDuyuru.TabIndex = 19;
+            this.BtnDuyuru.Text = "Duyurular";
+            this.BtnDuyuru.UseVisualStyleBackColor = true;
+            this.BtnDuyuru.Click += new System.EventHandler(this.BtnDuyuru_Click);
+            // 
             // BtnRandevuListe
             // 
-            this.BtnRandevuListe.Location = new System.Drawing.Point(390, 39);
+            this.BtnRandevuListe.Location = new System.Drawing.Point(299, 39);
             this.BtnRandevuListe.Name = "BtnRandevuListe";
-            this.BtnRandevuListe.Size = new System.Drawing.Size(166, 43);
+            this.BtnRandevuListe.Size = new System.Drawing.Size(135, 43);
             this.BtnRandevuListe.TabIndex = 18;
             this.BtnRandevuListe.Text = "Randevu Liste";
             this.BtnRandevuListe.UseVisualStyleBackColor = true;
-            // 
-            // BtnBransPanel
-            // 
-            this.BtnBransPanel.Location = new System.Drawing.Point(209, 39);
-            this.BtnBransPanel.Name = "BtnBransPanel";
-            this.BtnBransPanel.Size = new System.Drawing.Size(166, 43);
-            this.BtnBransPanel.TabIndex = 17;
-            this.BtnBransPanel.Text = "Branş Paneli";
-            this.BtnBransPanel.UseVisualStyleBackColor = true;
+            this.BtnRandevuListe.Click += new System.EventHandler(this.BtnRandevuListe_Click);
             // 
             // BtnDoktorPanel
             // 
-            this.BtnDoktorPanel.Location = new System.Drawing.Point(26, 39);
+            this.BtnDoktorPanel.Location = new System.Drawing.Point(6, 39);
             this.BtnDoktorPanel.Name = "BtnDoktorPanel";
-            this.BtnDoktorPanel.Size = new System.Drawing.Size(166, 43);
+            this.BtnDoktorPanel.Size = new System.Drawing.Size(135, 43);
             this.BtnDoktorPanel.TabIndex = 16;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
+            // 
+            // BtnBransPanel
+            // 
+            this.BtnBransPanel.Location = new System.Drawing.Point(147, 39);
+            this.BtnBransPanel.Name = "BtnBransPanel";
+            this.BtnBransPanel.Size = new System.Drawing.Size(135, 43);
+            this.BtnBransPanel.TabIndex = 17;
+            this.BtnBransPanel.Text = "Branş Paneli";
+            this.BtnBransPanel.UseVisualStyleBackColor = true;
+            this.BtnBransPanel.Click += new System.EventHandler(this.BtnBransPanel_Click);
             // 
             // FrmSekreterDetay
             // 
@@ -454,7 +458,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -464,5 +467,6 @@
         private System.Windows.Forms.Button BtnRandevuListe;
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
+        private System.Windows.Forms.Button BtnDuyuru;
     }
 }

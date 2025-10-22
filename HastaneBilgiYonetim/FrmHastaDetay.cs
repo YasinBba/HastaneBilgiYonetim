@@ -76,5 +76,24 @@ namespace HastaneBilgiYonetim
             fr.Show();
             
         }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            TxtId.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
+
+        }
+
+        private void BtnRandevuAl_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update Tbl_Randevular set RandevuDurum=1,HastaTC=@p1,HastaSikayet=@p2 where RandevuId=@p3", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", LblTC.Text);
+            komut.Parameters.AddWithValue("@p2", TxtSikayet.Text);
+            komut.Parameters.AddWithValue("@p3", TxtId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu Alındı");
+
+        }
     }
 }
