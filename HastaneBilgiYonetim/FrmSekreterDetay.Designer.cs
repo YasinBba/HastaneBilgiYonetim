@@ -144,6 +144,7 @@
             this.BtnOlustur.TabIndex = 1;
             this.BtnOlustur.Text = "Oluştur";
             this.BtnOlustur.UseVisualStyleBackColor = true;
+            this.BtnOlustur.Click += new System.EventHandler(this.BtnOlustur_Click);
             // 
             // TxtDuyuru
             // 
@@ -394,11 +395,13 @@
             this.BtnDoktorPanel.TabIndex = 16;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(1068, 606);
             this.Controls.Add(this.groupBox6);
@@ -409,6 +412,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmSekreterDetay";
             this.Text = "FrmSekreterDetay";
             this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
